@@ -1,6 +1,6 @@
 /*
- * grunt-file-modified
- * https://github.com/adamj88/grunt-file-modified
+ * grunt-file-changed
+ * https://github.com/adamj88/grunt-file-changed
  *
  * Copyright (c) 2015 Adam Johnson
  * Licensed under the MIT license.
@@ -13,9 +13,9 @@ var crypto = require('crypto');
 
 module.exports = function(grunt) {
 
-  grunt.registerMultiTask('file_modified', 'Run grunt tasks if file has been modified since task last ran', function() {
+  grunt.registerMultiTask('file_changed', 'Run grunt tasks if file has been changed since task last ran', function() {
     var options = this.options({
-        hashFile: '.grunt/grunt-file-modified/hashes.json'
+        hashFile: '.grunt/grunt-file-changed/hashes.json'
     });
 
     grunt.verbose.writeflags(options, 'Options');

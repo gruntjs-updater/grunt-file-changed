@@ -1,4 +1,4 @@
-# grunt-file-modified
+# grunt-file-changed
 
 > Run grunt tasks if file has been modified since task last ran
 
@@ -8,23 +8,23 @@ This plugin requires Grunt `~0.4.5`
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-file-modified --save-dev
+npm install grunt-file-changed --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-file-modified');
+grunt.loadNpmTasks('grunt-file-changed');
 ```
 
-## The "file_modified" task
+## The "file_changed" task
 
 ### Overview
-In your project's Gruntfile, add a section named `file_modified` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `file_changed` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  file_modified: {
+  file_changed: {
     options: {
       // Task-specific options go here.
     },
@@ -39,7 +39,7 @@ grunt.initConfig({
 
 #### options.hashFile
 Type: `String`
-Default value: `.grunt/grunt-file-modified/hashes.json`
+Default value: `.grunt/grunt-file-changed/hashes.json`
 
 #### options.tasks
 Type: `Array`
@@ -54,7 +54,7 @@ In this example, the default options are used to do something with whatever. So 
 
 ```js
 grunt.initConfig({
-  file_modified: {
+  file_changed: {
     dist: {
         options: {
             tasks: ['task', 'task:name']
