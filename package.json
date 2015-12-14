@@ -1,0 +1,40 @@
+{
+  "name": "grunt-file-modified",
+  "description": "Run grunt tasks if file has been modified since task last ran",
+  "version": "0.0.1",
+  "homepage": "https://github.com/adamj88/grunt-file-modified",
+  "author": {
+    "name": "Adam Johnson"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adamj88/grunt-file-modified.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adamj88/grunt-file-modified/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/adamj88/grunt-file-modified/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
