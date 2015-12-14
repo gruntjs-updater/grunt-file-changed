@@ -14,7 +14,9 @@ var crypto = require('crypto');
 module.exports = function(grunt) {
 
   grunt.registerMultiTask('file_modified', 'Run grunt tasks if file has been modified since task last ran', function() {
-    var options = this.options({});
+    var options = this.options({
+        hashFile: '.grunt/grunt-file-modified/hashes.json'
+    });
 
     grunt.verbose.writeflags(options, 'Options');
 
