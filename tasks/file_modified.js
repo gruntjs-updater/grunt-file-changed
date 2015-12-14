@@ -49,7 +49,7 @@ module.exports = function(grunt) {
     var hash = md5.digest('hex');
     grunt.verbose.writeln('Hash: ' + hash);
 
-    if (hash != hashes[this.target]) {
+    if (hash !== hashes[this.target]) {
         grunt.log.writeln('Something changed, executing tasks: ' + JSON.stringify(options.tasks));
 
         grunt.task.run(options.tasks);
